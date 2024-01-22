@@ -5,18 +5,19 @@ public class Project1 {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        String answer;
         String yes = "yes";
+        String answer;
         String name;
         int age;
         int feet;
         int inches;
+        //ArrayList<Player> player = new ArrayList<>();
 
         do { 
             System.out.println("Enter player information");
 
             System.out.println("Enter name");
-            name = input.next(); //ensure only letters
+            name = input.next(); //ensure only letters and keep to less than certain amount of chars
 
             System.out.println("Enter age");
             age = input.nextInt();
@@ -26,9 +27,11 @@ public class Project1 {
             feet = input.nextInt();
             System.out.println("Enter inches"); //deal with double types
             inches = input.nextInt();
-            
-            System.out.println("Have another player to add? Enter yes or no");//ensure yes or no and take upper or lower
-            answer = input.next();
+            //player.add.(player(name,age,feet,inches));
+            //Player name = new Player(name, age);
+
+            System.out.println("Have another player to add? Enter yes or no");
+            answer = input.next(); //ensure yes or no and take upper or lower
 
             
         } while (answer.equalsIgnoreCase(yes));

@@ -2,12 +2,12 @@
  * Height
  */
 public class Height {
-
+    //Player person;
     private int feet;
     private int inches;
 
     public Height(int feet, int inches) {
-        
+        //person = new Person
         this.feet = feet;
         this.inches = inches;
     }
