@@ -24,6 +24,6 @@ class Player {
     }
 
     public String toString() {
-        return " ";
+        return name + " who's age is " + age + " is " + height.toString();
     }
 }
