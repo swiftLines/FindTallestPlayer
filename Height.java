@@ -18,6 +18,7 @@ public class Height {
     }
 
     public String toString() {
+        //ensure returns inches less than 12
         return "Height: " + this.feet + "' " + this.inches + "\" ";
     }
 }

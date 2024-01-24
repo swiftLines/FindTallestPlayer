@@ -2,13 +2,15 @@ class Player {
 
     private String name;
     private int age;
-    private Height height;
+    protected int feet;
+    protected int inches;
+    protected Height height = new Height(feet, inches);
 
-    public Player(String name, int age, Height height) {
+    public Player(String name, int age, int feet, int inches) {
         
         this.name = name;
         this.age = age;
-        this.height = height;
+        this.height = new Height(feet, inches);
     }
 
     public Height getHeight() {
@@ -24,6 +26,7 @@ class Player {
     }
 
     public String toString() {
+        // labels instead of a sentence
         return name + " who's age is " + age + " is " + height.toString();
     }
 }

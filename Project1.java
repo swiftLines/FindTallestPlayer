@@ -11,7 +11,8 @@ public class Project1 {
         int age;
         int feet;
         int inches;
-        //ArrayList<Player> player = new ArrayList<>();
+        int count = 0;
+       //ArrayList<Player> player = new ArrayList<>();
 
         do { 
             System.out.println("Enter player information");
@@ -28,12 +29,16 @@ public class Project1 {
             System.out.println("Enter inches"); //deal with double types
             inches = input.nextInt();
             //player.add.(player(name,age,feet,inches));
-            //Player name = new Player(name, age);
+            //Player one = new Player(name, age, feet, inches);
+            //count++;
 
             System.out.println("Have another player to add? Enter yes or no");
             answer = input.next(); //ensure yes or no and take upper or lower
 
             
         } while (answer.equalsIgnoreCase(yes));
+        Player one = new Player(name, age, feet, inches);
+        //Do a get height test
+        System.out.println(name);
     }
 }
